@@ -42,3 +42,14 @@ function cellClick() {
         if (isHighlighted) highlightZero(this);
     }
 }
+
+// Task 3
+const btnPlusOne = document.querySelector('#btnPlusOne');
+
+btnPlusOne.addEventListener('click', incrementListValues);
+
+function incrementListValues() {
+    const listItems = document.querySelectorAll('#numberedList li');
+
+    listItems.forEach(item => item.textContent++);
+}
