@@ -137,6 +137,8 @@ td:hover {
 }
 
 ol {
+    margin: 0;
+    padding: 0 0 0 1.50vw;
     width: 100%;
     font-size: 1.25vw;
 }
