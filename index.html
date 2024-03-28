@@ -8,46 +8,102 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div>
-        <table id="table">
-            <tbody>
-                <tr>
-                    <td>0</td>
-                    <td>-1</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>-1</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>-1</td>
-                </tr>
-            </tbody>
-        </table>
+    <div style="margin: 0;">
+        <div class="buttons">
+            <button id="btnTask1" class="button-1 active">Task 1</button>
+            <button id="btnTask2" class="button-1 active">Task 2</button>
+            <button id="btnTask3" class="button-1">Task 3</button>
+            <button id="btnTask4" class="button-1">Task 4</button>
+            <button id="btnTask5" class="button-1">Task 5</button>
+        </div>
 
-        <button id="btnShowZeros">show zeros</button>
-    </div>
+        <div class="tasks">
+            <div id="task1 task2" class="task visible">
+                <div class="task-section">
+                    <div class="section">
+                        <div class="caption">
+                            <h2>Task 1 + 2</h2>
+                        </div>
+                        <div class="fields">
+                            <table id="table">
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <button id="btnShowZeros" class="button-2">show zeros</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="task3" class="task">
+                <div class="task-section">
+                    <div class="section">
+                        <div class="caption">
+                            <h2>Task 3</h2>
+                        </div>
+                        <div class="fields">
+                            <ol id="numberedList">
+                                <li>4</li>
+                                <li>8</li>
+                                <li>3</li>
+                            </ol>
+                    
+                            <button id="btnPlusOne" class="button-2">+1</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="task4 task5" class="task">
+                <div class="task-section">
+                    <div class="section">
+                        <div class="caption">
+                            <h2>Task 4 + 5</h2>
+                        </div>
+                        <div class="fields">
+                            <p>Paragraph 1</p>
+                            <p>Paragraph 2</p>
+                            <p>Paragraph 3</p>
 
-    <div>
-        <ol id="numberedList">
-            <li>4</li>
-            <li>8</li>
-            <li>3</li>
-        </ol>
-
-        <button id="btnPlusOne">+1</button>
-    </div>
-
-    <div>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <p>Paragraph 3</p>
-
-        <button id="btnNumberParagraphs">add indexes</button>
+                            <button id="btnNumberParagraphs" class="button-2">add indexes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="assets/js/script.js"></script>

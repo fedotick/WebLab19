@@ -1,5 +1,151 @@
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000000;
+    color: #F5F5F5;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button-1 {
+    padding: 0.25vw 0.50vw;
+    display: flex;
+    font-size: 0.83vw;
+    color: #808080;
+    border: none;
+    background-color: transparent;
+}
+
+.button-1:hover {
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+.active {
+    color: #000000;
+    background-color: #F5F5F5;
+}
+
+.active:hover {
+    color: #000000;
+}
+
+.button-2 {
+    padding: 0.50vw 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25vw;
+    color: #000000;
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.button-2:hover {
+    box-shadow: 0 0 0.50vw white;
+    cursor: pointer;
+}
+
+.tasks {
+    position: relative;
+    width: 31.25vw;
+    height: 31.25vw;
+    box-sizing: border-box;
+    border: 0.05vw solid #F5F5F5;
+}
+
+.task {
+    opacity: 100%;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.visible {
+    display: flex;
+}
+
+.task-section {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.60vw;
+    padding: 2.60vw;
+}
+
+.section {
+    width: 100%;
+}
+
+.caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+h2 {
+    font-size: 1.67vw;
+    font-weight: 400;
+    margin: 0;
+}
+
+.caption span {
+    font-weight: 200;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: auto;
+}
+
+td {
+    width: 4vw;
+    height: 4vw;
+    font-size: 1.25vw;
+    text-align: center;
+    border: 0.05vw solid #F5F5F5;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgba(245, 245, 245, 15%);
+}
+
 .red-cell {
-    background-color: red;
+    box-shadow: inset 0 0 1vw #F5F5F5;
+}
+
+ol {
+    width: 100%;
+    font-size: 1.25vw;
+}
+
+p {
+    width: 100%;
+    font-size: 1.25vw;
+    cursor: pointer;
+    margin: 0;
 }
 
 .italic {
