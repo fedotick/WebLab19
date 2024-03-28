@@ -66,3 +66,24 @@ function changeTextStyle() {
         this.classList.add('italic');
     }
 }
+
+// Task 5
+let isIndexesAdded = false;
+
+const btnNumberParagraphs = document.querySelector('#btnNumberParagraphs');
+
+btnNumberParagraphs.addEventListener('click', numberParagraphs);
+
+function numberParagraphs() {
+    paragraphs.forEach((paragraph, index) => {
+        if (isIndexesAdded) {
+            paragraph.textContent = paragraph.textContent.replace(/^\d+\.\s/, '');
+            this.textContent = 'add indexes';
+        } else {
+            paragraph.textContent = `${index + 1}. ${paragraph.textContent}`;
+            this.textContent = 'remove indexes';
+        }
+    });
+
+    isIndexesAdded = !isIndexesAdded;
+}
