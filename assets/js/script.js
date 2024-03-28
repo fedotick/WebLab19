@@ -59,12 +59,10 @@ const paragraphs = document.querySelectorAll('p');
 
 paragraphs.forEach(paragraph => paragraph.addEventListener('click', changeTextStyle));
 
-function changeTextStyle(even) {
-    const target = even.target;
-
-    if (target.classList.contains('italic')) {
-        target.classList.remove('italic');
+function changeTextStyle() {
+    if (this.classList.contains('italic')) {
+        this.classList.remove('italic');
     } else {
-        target.classList.add('italic');
+        this.classList.add('italic');
     }
 }
