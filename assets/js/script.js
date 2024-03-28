@@ -10,12 +10,12 @@ function btnHighlightZerosClick() {
     if (isHighlighted) {
         removeHighlightingZeros(cells);
         this.textContent = 'show zeros';
-        isHighlighted = false;
     } else {
         highlightZeros(cells);
         this.textContent = 'hide zeros';
-        isHighlighted = true;
     }
+
+    isHighlighted = !isHighlighted;
 }
 
 function highlightZeros(cells) {
