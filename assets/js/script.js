@@ -53,3 +53,18 @@ function incrementListValues() {
 
     listItems.forEach(item => item.textContent++);
 }
+
+// Task 4
+const paragraphs = document.querySelectorAll('p');
+
+paragraphs.forEach(paragraph => paragraph.addEventListener('click', changeTextStyle));
+
+function changeTextStyle(even) {
+    const target = even.target;
+
+    if (target.classList.contains('italic')) {
+        target.classList.remove('italic');
+    } else {
+        target.classList.add('italic');
+    }
+}

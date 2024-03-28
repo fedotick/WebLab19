@@ -1,3 +1,7 @@
 .red-cell {
     background-color: red;
 }
+
+.italic {
+    font-style: italic;
+}
