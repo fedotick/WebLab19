@@ -23,11 +23,11 @@ function highlightZeros(cells) {
 }
 
 function highlightZero(cell) {
-    cell.textContent === '0' ? cell.classList.add('red-cell') : cell.classList.remove('red-cell');
+    cell.textContent === '0' ? cell.classList.add('higlighted-cell') : cell.classList.remove('higlighted-cell');
 }
 
 function removeHighlightingZeros(cells) {
-    cells.forEach(cell => cell.classList.remove('red-cell'));
+    cells.forEach(cell => cell.classList.remove('higlighted-cell'));
 }
 
 // Task 2
@@ -86,4 +86,25 @@ function numberParagraphs() {
     });
 
     isIndexesAdded = !isIndexesAdded;
+}
+
+// Click handler for task buttons
+const btnsTask = document.querySelectorAll('.button-1');
+const tasks = document.querySelectorAll('.task');
+
+btnsTask.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        hideTasks();
+        btn.classList.add('active');
+        tasks[index].classList.add('visible');
+    });
+});
+
+function hideTasks() {
+    for (const btn of btnsTask) {
+        btn.classList.remove('active');
+    }
+    for (const task of tasks) {
+        task.classList.remove('visible');
+    }
 }
